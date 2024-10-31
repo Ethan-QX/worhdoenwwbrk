@@ -182,7 +182,7 @@ python-dotenv==1.0.1
 pytube==15.0.0
 pytz==2024.2
 pyvis
-pywin32==308
+pywin32
 PyYAML==6.0.2
 pyzmq==26.2.0
 qdrant-client==1.12.1

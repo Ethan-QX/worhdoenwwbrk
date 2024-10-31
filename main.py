@@ -25,6 +25,10 @@ st.title("Streamlit App")
 form = st.form(key="form")
 form.subheader("Prompt")
 
+resume = form.text_area("Enter resume link", height=5)
+
+job = form.text_area("Enter Job link", height=5)
+
 user_prompt = form.text_area("Enter your prompt here", height=200)
 
 if form.form_submit_button("Submit"):
@@ -44,12 +48,7 @@ if form.form_submit_button("Submit"):
 
 
 
-resume = form.text_area("Enter resume link", height=5)
-
-job = form.text_area("Enter Job link", height=5)
-
-
-crew = Crew(
+    crew = Crew(
     agents=[profiler,analyst, resume_strategist],
     tasks=[extract_requirements, compile_profile,align_with_requirement],
     verbose=True
@@ -71,3 +70,9 @@ job_application_inputs = {
 result = crew.kickoff(inputs=job_application_inputs)
 
 result
+
+
+
+
+
+
