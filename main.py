@@ -39,3 +39,9 @@ if form.form_submit_button("Submit"):
     print(course_details)
     df = pd.DataFrame(course_details)
     df 
+
+
+
+resume = form.text_area("Enter resume link", height=20)
+
+job = form.text_area("Enter Job link", height=20)
