@@ -42,6 +42,6 @@ if form.form_submit_button("Submit"):
 
 
 
-resume = form.text_area("Enter resume link", height=20)
+resume = form.text_area("Enter resume link", height=5)
 
-job = form.text_area("Enter Job link", height=20)
+job = form.text_area("Enter Job link", height=5)
