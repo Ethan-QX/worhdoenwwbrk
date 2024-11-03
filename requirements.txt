@@ -204,7 +204,7 @@ pytils
 pytube
 pytz
 pyvis
-
+pywin32
 PyYAML
 pyzmq
 qdrant-client
